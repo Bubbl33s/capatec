@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Star Wars Trivia</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.cdnfonts.com/css/star-wars" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1 class="title">Star Wars Trivia</h1>
+  </header>
+  <main class="container">
+    <form>
+      <fieldset class="data">
+        <h2 class="nivel">Datos personales</h2>
+        <div class="personal">
+          <label for="name">Nombre completo</label><input id="name" type="text" name="name" class="info" placeholder="Ingresa tu nombre" />
+        </div>
+        <div class="personal">
+          <label for="edad">Edad</label><input id="edad" type="number" name="edad" class="info" min="8" max="120"/>
+        </div>
+        <div class="personal">
+          <label for="correo">Correo</label><input id="correo" type="email" name="correo" class="info" placeholder="correo@ejemplo.com" />
+        </div>
+        <div class="maythe4">
+          <h3>May the force be with you</h3>
+        </div>
+      </fieldset>
+      <fieldset>
+        <h2 class="nivel">Nivel I</h2>
+
+        <div class="question-container">
+          <p class="pregunta">1. ¿Cuál es la primera película de la saga? (Orden de estreno)</p>
+          <div class="option-container">
+            <input type="radio" name="pregunta1" id="p1o1" value="p1o1"/><label for="p1o1">Rogue One: A Star Wars Story</label>
+          </div>
+          <div class="option-container">
+            <input type="radio" name="pregunta1" id="p1o2" value="p1o2"/><label for="p1o2">Star Wars: Episode I – The Phantom Menace</label>
+          </div>
+          <div class="option-container">
+            <input type="radio" name="pregunta1" id="p1o3" value="p1o3"/><label for="p1o3">Star Wars: The Clone Wars (film)</label>
+          </div>
+          <div class="option-container">
+            <input type="radio" name="pregunta1" id="p1o4" value="p1o4"/><label for="p1o4">Star Wars: Episode IV – A New Hope</label>
+          </div>
+        </div>
+        <div class="separator"></div>
+
+        <div class="question-container">
+          <p class="pregunta">2. ¿Cuál es la primera película de la saga? (Orden cronológico)</p>
+          <div class="option-container">
+            <input type="radio" name="pregunta2" id="p2o1" value="p2o1"/><label for="p2o1">Star Wars: The Clone Wars (film)</label>
+          </div>
+          <div class="option-container">
+            <input type="radio" name="pregunta2" id="p2o2" value="p2o2"/><label for="p2o2">Star Wars: Episode IV – A New Hope</label>
+          </div>
+          <div class="option-container">
+            <input type="radio" name="pregunta2" id="p2o3" value="p2o3"/><label for="p2o3">Star Wars: Episode I – The Phantom Menace</label>
+          </div>
+          <div class="option-container">
+            <input type="radio" name="pregunta2" id="p2o4" value="p2o4"/><label for="p2o4">Rogue One: A Star Wars Story</label>
+          </div>
+        </div>
+        <div class="separator"></div>
+
+        <div class="question-container">
+          <p class="pregunta">3. ¿Cuál es el apellido biológico de la Princesa Leia?</p>
+          <div class="option-container">
+            <input type="radio" name="pregunta3" id="p3o1" value="p3o1"/><label for="p3o1">Alderaan</label>
+          </div>
+          <div class="option-container">
+            <input type="radio" name="pregunta3" id="p3o2" value="p3o2"/><label for="p3o2">Skywalker</label>
+          </div>
+          <div class="option-container">
+            <input type="radio" name="pregunta3" id="p3o3" value="p3o3"/><label for="p3o3">Organa</label>
+          </div>
+          <div class="option-container">
+            <input type="radio" name="pregunta3" id="p3o4" value="p3o4"/><label for="p3o4">Solo</label>
+          </div>
+        </div>
+        <div class="separator"></div>
+
+        <div class="question-container">
+          <p class="pregunta">4. ¿En qué planeta el Maestro Yoda cumplió su exhilio?</p>
+          <div class="option-container">
+            <input type="radio" name="pregunta4" id="p4o1" value="p4o1"/><label for="p4o1">Tatooine</label>
+          </div>
+          <div class="option-container">
+            <input type="radio" name="pregunta4" id="p4o2" value="p4o2"/><label for="p4o2">Dagobah</label>
+          </div>
+          <div class="option-container">
+            <input type="radio" name="pregunta4" id="p4o3" value="p4o3"/><label for="p4o3">Naboo</label>
+          </div>
+          <div class="option-container">
+            <input type="radio" name="pregunta4" id="p4o4" value="p4o4"/><label for="p4o4">Coruscant</label>
+          </div>
+        </div>
+        <div class="separator"></div>
+
+        <div class="question-container">
+          <p class="pregunta">5. ¿Cuándo se celebra el "Día de Star Wars"?</p>
+          <div class="option-container">
+            <input type="radio" name="pregunta5" id="p5o1" value="p5o1"/><label for="p5o1">4 de Mayo</label>
+          </div>
+          <div class="option-container">
+            <input type="radio" name="pregunta5" id="p5o2" value="p5o2"/><label for="p5o2">12 de Diciembre</label>
+          </div>
+          <div class="option-container">
+            <input type="radio" name="pregunta5" id="p5o3" value="p5o3"/><label for="p5o3">28 de Junio</label>
+          </div>
+          <div class="option-container">
+            <input type="radio" name="pregunta5" id="p5o4" value="p5o4"/><label for="p5o4">23 de Agosto</label>
+          </div>
+        </div>
+        <div class="separator"></div>
+
+        <h2 class="nivel">Nivel II</h2>
+
+        <div class="question-container">
+          <p class="pregunta">6. ¿Qué título llevan los Jedi y Sith respectivamente?</p>
+          <div class="option-container">
+            <input type="radio" name="pregunta6" id="p6o1" value="p6o1"/><label for="p6o1">Maestro y Amo</label>
+          </div>
+          <div class="option-container">
+            <input type="radio" name="pregunta6" id="p6o2" value="p6o2"/><label for="p6o2">Padawan y Acólito</label>
+          </div>
+          <div class="option-container">
+            <input type="radio" name="pregunta6" id="p6o3" value="p6o3"/><label for="p6o3">Comandante y Maestro</label>
+          </div>
+          <div class="option-container">
+            <input type="radio" name="pregunta6" id="p6o4" value="p6o4"/><label for="p6o4">Caballero y Lord</label>
+          </div>
+        </div>
+        <div class="separator"></div>
+
+        <div class="question-container">
+          <p class="pregunta">7. ¿Qué evento se usa como referencia temporal para el universo de Star Wars?</p>
+          <div class="option-container">
+            <input type="radio" name="pregunta7" id="p7o1" value="p7o1"/><label for="p7o1">Batalla de Yavin</label>
+          </div>
+          <div class="option-container">
+            <input type="radio" name="pregunta7" id="p7o2" value="p7o2"/><label for="p7o2">Batalla de Geonosis</label>
+          </div>
+          <div class="option-container">
+            <input type="radio" name="pregunta7" id="p7o3" value="p7o3"/><label for="p7o3">Batalla de Coruscant</label>
+          </div>
+          <div class="option-container">
+            <input type="radio" name="pregunta7" id="p7o4" value="p7o4"/><label for="p7o4">Batalla de Endor</label>
+          </div>
+        </div>
+        <div class="separator"></div>
+
+        <div class="question-container">
+          <p class="pregunta">8. ¿Qué Sith no corresponde con su nombre original?</p>
+          <div class="option-container">
+            <input type="radio" name="pregunta8" id="p8o1" value="p8o1"/><label for="p8o1">Darth Maul / Savage Opress</label>
+          </div>
+          <div class="option-container">
+            <input type="radio" name="pregunta8" id="p8o2" value="p8o2"/><label for="p8o2">Darth Sidious / Sheev Palpatine</label>
+          </div>
+          <div class="option-container">
+            <input type="radio" name="pregunta8" id="p8o3" value="p8o3"/><label for="p8o3">Darth Vader / Anakin Skywalker</label>
+          </div>
+          <div class="option-container">
+            <input type="radio" name="pregunta8" id="p8o4" value="p8o4"/><label for="p8o4">Darth Tyranus / Conde Dooku</label>
+          </div>
+        </div>
+        <div class="separator"></div>
+
+        <div class="question-container">
+          <p class="pregunta">9. ¿Cuál es el nombre del cristal usado como fuente de energía para los lightsaber?</p>
+          <div class="option-container">
+            <input type="radio" name="pregunta9" id="p9o1" value="p9o1"/><label for="p9o1">Kayburr</label>
+          </div>
+          <div class="option-container">
+            <input type="radio" name="pregunta9" id="p9o2" value="p9o2"/><label for="p9o2">Keibber</label>
+          </div>
+          <div class="option-container">
+            <input type="radio" name="pregunta9" id="p9o3" value="p9o3"/><label for="p9o3">Kiebur</label>
+          </div>
+          <div class="option-container">
+            <input type="radio" name="pregunta9" id="p9o4" value="p9o4"/><label for="p9o4">Kyber</label>
+          </div>
+        </div>
+        <div class="separator"></div>
+
+        <div class="question-container">
+          <p class="pregunta">10. ¿Cuál es el nombre del proceso que realizan los Sith para obtener el cristal rojo para sus lightsaber?</p>
+          <div class="option-container">
+            <input type="radio" name="pregunta10" id="p10o1" value="p10o1"/><label for="p10o1">Desgarrar</label>
+          </div>
+          <div class="option-container">
+            <input type="radio" name="pregunta10" id="p10o2" value="p10o2"/><label for="p10o2">Sangrar</label>
+          </div>
+          <div class="option-container">
+            <input type="radio" name="pregunta10" id="p10o3" value="p10o3"/><label for="p10o3">Fusionar</label>
+          </div>
+          <div class="option-container">
+            <input type="radio" name="pregunta10" id="p10o4" value="p10o4"/><label for="p10o4">Concentrar</label>
+          </div>
+        </div>
+        <div class="separator"></div>
+
+        <h2 class="nivel">Nivel III</h2>
+
+        <div class="question-container">
+          <p class="pregunta">11. Sith que no fue canonizado gracias a los nombres de las Legiones de los Sith Troopers</p>
+          <div class="option-container">
+            <input type="radio" name="pregunta11" id="p11o1" value="p11o1"/><label for="p11o1">Darth Revan</label>
+          </div>
+          <div class="option-container">
+            <input type="radio" name="pregunta11" id="p11o2" value="p11o2"/><label for="p11o2">Darth Andeddu</label>
+          </div>
+          <div class="option-container">
+            <input type="radio" name="pregunta11" id="p11o3" value="p11o3"/><label for="p11o3">Darth Nihilus</label>
+          </div>
+          <div class="option-container">
+            <input type="radio" name="pregunta11" id="p11o4" value="p11o4"/><label for="p11o4">Darth Tenebrous</label>
+          </div>
+        </div>
+        <div class="separator"></div>
+
+        <div class="question-container">
+          <p class="pregunta">12. Forma de combate asociada al uso de dos lightsaber</p>
+          <div class="option-container">
+            <input type="radio" name="pregunta12" id="p12o1" value="p12o1"/><label for="p12o1">Forma VI: Niman</label>
+          </div>
+          <div class="option-container">
+            <input type="radio" name="pregunta12" id="p12o2" value="p12o2"/><label for="p12o2">Forma IV: Ataru</label>
+          </div>
+          <div class="option-container">
+            <input type="radio" name="pregunta12" id="p12o3" value="p12o3"/><label for="p12o3">Forma V: Shien/Djem So</label>
+          </div>
+          <div class="option-container">
+            <input type="radio" name="pregunta12" id="p12o4" value="p12o4"/><label for="p12o4">Forma II: Makashi</label>
+          </div>
+        </div>
+        <div class="separator"></div>
+
+        <div class="question-container">
+          <p class="pregunta">13. Número de stormtrooper de Finn</p>
+          <div class="option-container">
+            <input type="radio" name="pregunta13" id="p13o1" value="p13o1"/><label for="p13o1">FN-5214</label>
+          </div>
+          <div class="option-container">
+            <input type="radio" name="pregunta13" id="p13o2" value="p13o2"/><label for="p13o2">FN-4783</label>
+          </div>
+          <div class="option-container">
+            <input type="radio" name="pregunta13" id="p13o3" value="p13o3"/><label for="p13o3">FN-9120</label>
+          </div>
+          <div class="option-container">
+            <input type="radio" name="pregunta13" id="p13o4" value="p13o4"/><label for="p13o4">FN-2187</label>
+          </div>
+        </div>
+        <div class="separator"></div>
+
+        <div class="question-container">
+          <p class="pregunta">14. ¿Quién fue el maestro de Qui-Gon-Jinn?</p>
+          <div class="option-container">
+            <input type="radio" name="pregunta14" id="p14o1" value="p14o1"/><label for="p14o1">Plo Koon</label>
+          </div>
+          <div class="option-container">
+            <input type="radio" name="pregunta14" id="p14o2" value="p14o2"/><label for="p14o2">Mace Windu</label>
+          </div>
+          <div class="option-container">
+            <input type="radio" name="pregunta14" id="p14o3" value="p14o3"/><label for="p14o3">Yoda</label>
+          </div>
+          <div class="option-container">
+            <input type="radio" name="pregunta14" id="p14o4" value="p14o4"/><label for="p14o4">Conde Dooku</label>
+          </div>
+        </div>
+        <div class="separator"></div>
+
+        <div class="question-container">
+          <p class="pregunta">15. ¿Cuántos miembros (idealmente) tiene el Alto Consejo Jedi?</p>
+          <div class="option-container">
+            <input type="radio" name="pregunta15" id="p15o1" value="p15o1"/><label for="p15o1">20</label>
+          </div>
+          <div class="option-container">
+            <input type="radio" name="pregunta15" id="p15o2" value="p15o2"/><label for="p15o2">17</label>
+          </div>
+          <div class="option-container">
+            <input type="radio" name="pregunta15" id="p15o3" value="p15o3"/><label for="p15o3">12</label>
+          </div>
+          <div class="option-container">
+            <input type="radio" name="pregunta15" id="p15o4" value="p15o4"/><label for="p15o4">5</label>
+          </div>
+        </div>
+        <div class="separator"></div>
+
+        <h2 class="nivel">Nivel Bonus</h2>
+
+        <div class="question-container">
+          <p class="pregunta">¿Cuál es el mejor personaje de la serie de Ahsoka?</p>
+          <div class="option-container">
+            <input type="radio" name="bonus1" id="b1o1" value="b1o1"/><label for="b1o1">Shin Hati</label>
+          </div>
+          <div class="option-container">
+            <input type="radio" name="bonus1" id="b1o2" value="b1o2"/><label for="b1o2">Definitivamente Shin Hati</label>
+          </div>
+          <div class="option-container">
+            <input type="radio" name="bonus1" id="b1o3" value="b1o3"/><label for="b1o3">Por supuesto que Shin Hati</label>
+          </div>
+          <div class="option-container">
+            <input type="radio" name="bonus1" id="b1o4" value="b1o4"/><label for="b1o4">Todas las anteriores</label>
+          </div>
+        </div>
+        <div class="separator"></div>
+
+        <div class="question-container">
+          <p class="pregunta">¿Disney arruinó Star Wars?</p>
+          <div class="option-container">
+            <input type="radio" name="bonus2" id="b2o1" value="b2o1"/><label for="b2o1">Sí</label>
+          </div>
+          <div class="option-container">
+            <input type="radio" name="bonus2" id="b2o2" value="b2o2"/><label for="b2o2">Sí</label>
+          </div>
+          <div class="option-container">
+            <input type="radio" name="bonus2" id="b2o3" value="b2o3"/><label for="b2o3">Sí</label>
+          </div>
+          <div class="option-container">
+            <input type="radio" name="bonus2" id="b2o4" value="b2o4"/><label for="b2o4">Sí</label>
+          </div>
+        </div>
+        <div class="separator"></div>
+
+        <div class="question-container">
+          <p class="pregunta">¿Cuál es el apellido de Rey?</p>
+          <div class="option-container">
+            <input type="radio" name="bonus3" id="b3o1" value="b3o1" /><label for="b3o1">Skywalker</label>
+          </div>
+        </div>
+        <div class="separator"></div>
+      </fieldset>
+    </form>
+  </main>
+</body>
+<script src="script.js"></script>
+</html>
+
+<!--
+PLANTILLA
+
+<p class="pregunta">. </p>
+<div class="option-container">
+  <input type="radio" name="pregunta" id="po1" value="po1"/><label for="po1"></label>
+</div>
+<div class="option-container">
+  <input type="radio" name="pregunta" id="po2" value="po2"/><label for="po2"></label>
+</div>
+<div class="option-container">
+  <input type="radio" name="pregunta" id="po3" value="po3"/><label for="po3"></label>
+</div>
+<div class="option-container">
+  <input type="radio" name="pregunta" id="po4" value="po4"/><label for="po4"></label>
+</div>
+<div class="separator"></div>
+-->

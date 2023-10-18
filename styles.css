@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    margin: 0;
+    background-image: url(https://i.pinimg.com/originals/fb/2d/19/fb2d193eeacd7483b652d86d155112d8.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+header {
+    text-align: center;
+    color: #ffe81f;
+    padding-top: 20px;
+}
+
+.container {
+    width: 70vw;
+    margin: 20px auto;
+}
+
+.separator {
+    height: 10px;
+}
+
+form {
+    background-color: rgba(255, 255, 255, 0.6);
+    border: 0;
+    padding: 40px;
+    border-radius: 15px;
+}
+
+fieldset {
+    border: 0;
+    margin-bottom: 15px;
+}
+
+.title {
+    font-family: 'Star Jedi', sans-serif;
+    font-size: 4rem;
+}
+
+label {
+    font-size: 1.8rem;
+}
+
+.nivel {
+    font-size: 2.8rem;
+    margin: 10px 20px 10px 10px;
+}
+
+.personal {
+    font-size: 2.2rem;
+    font-weight: 500;
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    margin-left: 20px;
+}
+
+input[type="number"] {
+    text-align: right;
+}
+
+.info {
+    width: 300px;
+    min-width: 200px;
+    height: 3.2rem;
+    border: 1px solid black;
+    border-radius: 3px;
+    transition: border 0.3s;  
+}
+
+.maythe4 {
+    font-family: 'Star Jedi', sans-serif;
+    font-size: 2.8rem;
+    text-align: center;
+    margin-top: 25px;
+    color: black;
+}
+
+.question-container {
+    margin: 0 30px;
+}
+
+.pregunta {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 10px 8px 10px -20px;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+input[type="text"]:hover, 
+input[type="text"]:focus,
+input[type="number"]:hover, 
+input[type="number"]:focus,
+input[type="email"]:hover, 
+input[type="email"]:focus {
+    border-color: #ffe81f;
+}
+
+input[type=radio] {
+    appearance: none;
+    padding: 10px;
+    background-color: black;
+    border-radius:50%;
+ }
+ input[type=radio]:checked {
+    background-color: #ffe81f;
+ }
